@@ -8,9 +8,8 @@ public class CountWord {
     public static void main(String[] args) {
 
         getCountOfTheWords();
-        getCountSentence();
         // getCountOfTheWordsWithScanner();
-
+        getCountSentence();
     }
 
 
@@ -35,13 +34,6 @@ public class CountWord {
 
     }
 
-    public static void getCountSentence() { // Shebley
-        String str = "Eid Mubarak to Every one";
-        System.out.println(str.length());
-        System.out.println(str.length() - 1);
-        System.out.println(str.charAt(0));
-    }
-
     public static void getCountOfTheWordsWithScanner() { // Shebley
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your String");
@@ -55,6 +47,12 @@ public class CountWord {
         }
         System.out.println("Number of words in String: " + count);
 
+    }
+    public static void getCountSentence() { // Shebley
+        String str = "Eid Mubarak to Every one";
+        System.out.println(str.length());
+        System.out.println(str.length() - 1);
+        System.out.println(str.charAt(0));
     }
 
 }
