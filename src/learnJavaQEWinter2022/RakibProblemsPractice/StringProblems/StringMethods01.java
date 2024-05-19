@@ -6,31 +6,94 @@ import java.util.Arrays;
 public class StringMethods01 {
 
     public static void main(String[] args) {
+
         String str = "Hello World!";
-        printMessage1(str);
+
+        printMessage(str);
+        getLength(str);
+        getToUpperCase(str);
+        getToLowerCase(str);
+        getCharAt(str);
+        //getCharAtIndexOutOfBound(str);
+        getCharAtIndexOutOfBoundExceptionHandle(str);
+        getIndexByCharacter(str);
+        getIndexByCharacter1(str);
+        getIndexByCharacter2(str);
+
     }
 
-    public static void printMessage1(String message) {
-        System.out.println(message);
-        // 1. length of the string
-        System.out.println("Length of the string: " + message.length());
+
+    // 0. print message
+    public static void printMessage(String str) {
+        System.out.println(str);
+    }
+
+    // 1. length of the given string
+    public static void getLength(String str) {
+        System.out.println("Length of the string: " + str.length());
+    }
+
+    // 2. toUpperCase() method
+    public static void getToUpperCase(String str) {
+        System.out.println("String in uppercase: " + str.toUpperCase());
+    }
+
+    // 2. toLowerCase() method
+    public static void getToLowerCase(String str) {
+        System.out.println("String in uppercase: " + str.toLowerCase());
+    }
+
+    //===================================== charAt() method =====================================================
+    //4. charAt() method
+    public static void getCharAt(String str) {
+        System.out.println("Character at index 6: " + str.charAt(6));
+    }
+
+    //4.01. charAt() method --> index out of bound
+    public static void getCharAtIndexOutOfBound(String str) {
+        System.out.println("Character-at 13 index out of bound : " + str.charAt(12));
+    }
+
+    //4.01.01. charAt() method --> index out of bound
+    public static void getCharAtIndexOutOfBoundExceptionHandle(String str) {
+        try {
+            System.out.println("Character-at 13 index out of bound exception handle : " + str.charAt(13));
+        } catch (Exception e) {
+            System.out.println("Index 13 is out String");
+        }
+    }
+
+    //=============================================== getIndexByCharacter =============================================
+
+    // 5. indexOf() method
+    private static void getIndexByCharacter(String str) {
+        System.out.println("Index of 'W': " + str.indexOf('W'));
 
     }
 
+    // 5.1 indexOf() method use case-insensitive --> toLowerCase() ==> manual approach
+    public static void getIndexByCharacter1(String str) {
+        System.out.println("Index of 'W': " + str.toLowerCase().indexOf('w'));
+    }
 
-    // ==================================================================================
-//        // 2. toUpperCase() method
-//        System.out.println("String in uppercase: " + message.toUpperCase());
-//
-//        // 3. toLowerCase() method
-//        System.out.println("String in lowercase: " + message.toLowerCase());
-//
-//        // 4. charAt() method
-//        System.out.println("Character at index 4: " + message.charAt(4));
-//
-//        // 5. indexOf() method
-//        System.out.println("Index of 'o': " + message.indexOf('o'));
-//
+    // 5.2 indexOf() method use case-insensitive --> toLowerCase() ==> Dynamic approach whatever case you put
+    public static void getIndexByCharacter2(String str) {
+        System.out.println("Index of 'W': " + str.toLowerCase().indexOf("w".toLowerCase()));
+
+    }
+
+// ==============================================================================================================
+
+
+
+
+
+
+
+
+// ==================================================================================
+
+
 //        // 6. lastIndexOf() method
 //        System.out.println("Last index of 'o': " + message.lastIndexOf('o'));
 //
