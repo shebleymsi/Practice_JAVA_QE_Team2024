@@ -1,4 +1,4 @@
-package learnJavaQEWinter2022.RakibProblemsPractice.StringProblems;
+package learnJavaQEWinter2022.RakibProblemsPractice.StringProblems01;
 
 public class ConvertCase03 {
 

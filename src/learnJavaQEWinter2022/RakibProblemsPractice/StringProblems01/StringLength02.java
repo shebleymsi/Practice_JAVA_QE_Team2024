@@ -1,4 +1,4 @@
-package learnJavaQEWinter2022.RakibProblemsPractice.StringProblems;
+package learnJavaQEWinter2022.RakibProblemsPractice.StringProblems01;
 
 // Write a Java program to get the length of a given string.
 //write the code by using a method and call it from the main method.
