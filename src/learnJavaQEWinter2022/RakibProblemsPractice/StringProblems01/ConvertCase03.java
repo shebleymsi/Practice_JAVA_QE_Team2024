@@ -1,11 +1,14 @@
 package learnJavaQEWinter2022.RakibProblemsPractice.StringProblems01;
 
-public class ConvertCase03 {
-
+public class ConvertCase03 { //done
     public static void main(String[] args) {
         String str = "Hello World!";
-        System.out.println("The string after converting to uppercase is: " + convertToUpperCase(str));
-        System.out.println("The string after converting to lowercase is: " + convertToLowerCase(str));
+
+        String result1 = convertToUpperCase(str);
+        System.out.println("The string after converting to uppercase is: " + result1);
+
+        String result2 = convertToLowerCase(str);
+        System.out.println("The string after converting to lowercase is: " + result2);
     }
 
     public static String convertToUpperCase(String str) {
@@ -15,4 +18,5 @@ public class ConvertCase03 {
     public static String convertToLowerCase(String str) {
         return str.toLowerCase();
     }
+
 }

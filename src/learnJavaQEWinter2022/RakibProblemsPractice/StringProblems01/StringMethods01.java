@@ -3,7 +3,7 @@ package learnJavaQEWinter2022.RakibProblemsPractice.StringProblems01;
 import java.util.Arrays;
 public class StringMethods01 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { // done
 
         //given String
         String str = "Hello World";
@@ -22,6 +22,7 @@ public class StringMethods01 {
         getSubString(str);
         getReplace(str);
         getTrim(str);
+
         getSplit(str);
 
         System.out.println("String starts with 'Hello': " + getStartsWith(str));
