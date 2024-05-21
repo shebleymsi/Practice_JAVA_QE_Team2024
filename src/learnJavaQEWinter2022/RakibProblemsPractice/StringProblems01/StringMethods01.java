@@ -1,12 +1,11 @@
 package learnJavaQEWinter2022.RakibProblemsPractice.StringProblems01;
 
-
 import java.util.Arrays;
-
 public class StringMethods01 {
 
     public static void main(String[] args) {
 
+        //given String
         String str = "Hello World";
 
         printMessage(str);
@@ -24,7 +23,6 @@ public class StringMethods01 {
         getReplace(str);
         getTrim(str);
         getSplit(str);
-
 
         System.out.println("String starts with 'Hello': " + getStartsWith(str));
         System.out.println("String starts with 'Hello' (case-sensitive): " + getStartsWith1(str));
@@ -44,7 +42,6 @@ public class StringMethods01 {
 
         getIsEmpty(str);
         getConcat(str);
-
 
     }
 
